@@ -1,0 +1,30 @@
+body {
+  background:  pink;
+}
+
+a {
+    color: hotpink;
+}
+
+
+h1  {
+  border: 5px solid blue;
+  border-right-width:80px;
+  width: 50%;
+
+    color: hotpink;
+}
+
+
+.webring {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  background: white;
+}
+
+
+hr {
+  width: 500px;
+  margin: 2em 0;
+}
