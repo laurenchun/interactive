@@ -1,0 +1,16 @@
+
+body {
+  background: grey;
+  /* The above is called a hex code.
+     There are two other ways to do colors in CSS: rgb and common names
+     Find "Digital Color Meter" on your computer to explore more */
+  color: white;
+  font-size: 22px;
+}
+
+
+
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
