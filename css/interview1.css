@@ -1,4 +1,89 @@
 
 body {
+  background: pink;
+   font-size: 22px;
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+
+h1 {
+
+
+  font-weight: lighter;
+  text-align: left;
+  font-size: 3em;
+  line-height: 1.1;
+  margin-bottom: 1em;
+}
+
+
+h2, h3 {
+
+  font-weight: lighter;
+  text-align: left;
+  font-size: 2em;
+  line-height: 1.1;
+  margin-bottom: 1em;
+}
+
+
+    a {
+      color: yellow;
+      text-decoration: none;
+    }
+
+
+    a:hover {
+      color: white;
+    }
+
+
+
+
+
+  .highlight {
+    background: yellow;
+    color: #587E20;
+  }
+
+
+
+
+
+  #table-of-contents {
+    position: fixed;
+    top: 12em;
+    left: 55em;
+    /* a background color might help it be differentiated from the rest */
+    background: black;
+    /* that means you'll have to change the color of the text */
+    color: orange;
+    /* some padding might make it look better */
+    padding: 1em;
+    /* maybe making the font size here smaller will help too */
+    font-size: 0.7em;
+  }
+
+#table-of-contents a {
+  color: orange;
+  text-decoration: none;
+}
+
+#table-of-contents a:hover {
+          color: red;
+        }
+
+
+        #table-of-contents ul {
+          padding: 0;
+          list-style-type: none;
+          /* you could also change the type of bullet with the above declaration! */
+        }
+
+
+#highlight {
   background: yellow;
+  color: red;
+  /* or pick a different color */
 }
