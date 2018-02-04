@@ -1,0 +1,103 @@
+
+body {
+  background: black;
+   font-size: 22px;
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   color: yellow
+}
+
+a {
+  color: yellow;
+  text-decoration: none;
+}
+
+
+a:hover {
+  color: white;
+}
+
+
+
+h1 {
+  font-weight: strong;
+  text-align: left;
+  font-size: 5em;
+  line-height: 1.1;
+  margin-bottom: 1em;
+}
+a:hover {
+  color: white;
+}
+
+
+h2 {
+  font-weight: strong;
+  text-align: left;
+  font-size: 4em;
+  line-height: 1.1;
+  margin-bottom: 1em;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: yellow;
+}
+
+
+
+h3 {
+  font-weight: strong;
+  text-align: left;
+  font-size: 2em;
+  line-height: 1.1;
+  margin-bottom: 1em;
+}
+
+a {
+  color: yellow;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+
+
+
+
+
+
+  #table-of-contents {
+    position: fixed;
+    top: 0em;
+    left: 15em;
+    /* a background color might help it be differentiated from the rest */
+    background: black;
+    /* that means you'll have to change the color of the text */
+    color: yellow;
+    /* some padding might make it look better */
+    padding: 1em;
+    /* maybe making the font size here smaller will help too */
+    font-size: 2em;
+  }
+
+#table-of-contents a {
+  color: white;
+  text-decoration: none;
+}
+
+#table-of-contents a:hover {
+          color: yellow;
+        }
+
+
+        #table-of-contents ul {
+          padding: 0;
+          list-style-type: none;
+          /* you could also change the type of bullet with the above declaration! */
+        }
