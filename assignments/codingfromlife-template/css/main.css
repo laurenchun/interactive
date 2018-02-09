@@ -2,26 +2,41 @@
 
 body {
 	background: black;
+	/* -webkit-animation-duration: 4s;
+	-webkit-animation-name: grow;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-out; */
 }
 
+@-webkit-keyframes grow {
+	from {
+		font-size: 16px;
+	}
 
-.table {
-	width: 1000px;
-	height: 756px;
-	margin: 100px auto;
-	background: #cca967;
-	position: relative;
+	to {
+		font-size: 32px;
+	}
 }
+
 
 .canvas {
 	width: 900px;
-	height: 666px;
+	height: 556px;
 	margin: 100px auto;
-	background: rgb(78, 147, 83);
+	background: white;
 	position: relative;
 }
 
-/* STILL LIFE */
+.canvas.one {
+	background: rgb(78, 147, 83);
+}
+
+.canvas.two {
+	background: #895222;
+}
+
+/* DRAWING ONE */
 
 .object {
 	position: absolute;
@@ -31,28 +46,28 @@ body {
 	height: 8em;
   width: 8em;
   border-radius: 50%;
-  bottom: 8em;
+  bottom: 11em;
   right: 17em;
   background: orange;
 }
 
 #orange #sticker {
-	height: 10em;
-	width: 10em;
-	border-radius: 50%;
-	bottom: 8em;
-	right: 17em;
+	height: .75em;
+	width: 1.25em;
 	background: blue;
+	border-radius: 50%;
+	border: 3px solid white;
+	right: 2em;
+	bottom: 2em;
 }
-
 
 #kiwi {
 	height: 3.75em;
   width: 5em;
-  border-radius: 50%;
+  border-radius: 42%;
   background: #513f35;
-  bottom: 6em;
-  right: 15em;
+  bottom: 9em;
+  right: 13em;
 }
 
 #vase {
@@ -85,12 +100,24 @@ body {
 }
 
 #candle {
-	width: 4em;
-	height: 6em;
+	width: 5em;
+	height: 7em;
 	border: 5px solid rgba(255,255,255,0.2);
-	bottom: 7em;
-  left: 15em;
-	background: rgba(255,255,255,0.2);
+	bottom: 5em;
+  right: 23em;
+	/* background: rgba(255,255,255,0.2); */
+	border-top: 0;
+	border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+}
+
+#candle #glass-top {
+	width: 100%;
+	height: 20%;
+	border-radius: 50%;
+	top: -13px;
+	left: -5px;
+	border: 5px solid rgba(255,255,255,0.2);
 }
 
 #candle #wax {
@@ -98,6 +125,8 @@ body {
 	width: 100%;
 	height: 70%;
 	bottom: 0;
+	border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
 }
 
 #candle #wax-top {
@@ -108,6 +137,14 @@ body {
 	top: 20%;
 }
 
+#candle #wick {
+	background: black;
+  width: .2em;
+  height: 20%;
+  top: 0.75em;
+  left: 48%;
+}
+
 #candle #flame {
 	background: yellow;
 	width: 13%;
@@ -115,49 +152,120 @@ body {
 	border-radius: 50%;
 	top: 0.25em;
 	left: 44%;
+	-webkit-animation-duration: 0.33s;
+	-webkit-animation-name: flicker;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in-out;
 }
 
-#triangle {
-	width: 0;
-	height: 0;
-	border-left: 100px solid transparent;
-	border-right: 100px solid transparent;
-	border-bottom: 200px solid yellow;
-	position: absolute;
-	top: 160px;
-	left: 100px;
+@-webkit-keyframes flicker {
+	from {
+		transform: rotate(3deg);
+		opacity: 1;
+		padding-top: .125em;
+	}
+
+	to {
+		transform: rotate(-3deg);
+		opacity: .85;
+		padding-top: 0;
+	}
 }
-
-#square {
-	width: 200px;
-	height: 200px;
-	background: red;
-	top: 160px;
-	left: 350px;
-	position: absolute;
-}
-
-#circle {
-	width: 200px;
-	height: 200px;
-	background: blue;
-	border-radius: 200px;
-	top: 160px;
-	left: 600px;
-	position: absolute;
-}
-
-
 
 #rose {
-  width: 0px;
-  height: 0px;
-  border-left: 70px solid transparent;
-  border-right: 70px solid transparent;
-  border-top: 300px solid rgba(76, 175, 80, 0.3);
-  -moz-border-radius: 20%;
-  -webkit-border-radius: 10%;
+	width: 43em;
+  height: 3em;
+  /* background: rgba(255,255,255,0.2); */
+  bottom: 9em;
+  left: 6em;
+  transform: rotate(9deg);
+}
+
+#rose #flower {
+	background: #b12121;
+  left: 1em;
+  height: 100%;
+  border-radius: 36%;
+  width: 3em;
+}
+
+#rose #stem {
+	height: 0.65em;
+  width: 45em;
+  background: green;
+  bottom: 30%;
+  left: 2em;
+  transform: rotate(1deg);
+}
+
+#rose #sleeve {
+	bottom: -2em;
+  border-top: 5em solid rgba(255,255,255, 0.2);
+  border-right: 37em solid transparent;
+  border-left: 3em solid transparent;
+  height: 0;
+  width: 6em;
+  left: -2em;
+  transform: rotate(5deg);
+}
+
+/* DRAWING TWO */
+
+#orange-two {
+	height: 8em;
+  width: 8em;
   border-radius: 50%;
-	top: 0px;
-	left: 100px;
+  bottom: 11em;
+  right: 17em;
+  background: orange;
+}
+
+#lamp {
+	height: 10em;
+	width: 10em;
+	right: 24em;
+	bottom: 13em;
+	/* border: 1px solid red; */
+}
+
+#lamp #light {
+	height: 85%;
+	width: 100%;
+	top: 12.5%;
+	border-radius: 50%;
+	background: rgb(242, 252, 167);
+	box-shadow: 0px 0px 24px rgba(242, 252, 167, 1);
+	-webkit-animation-duration: 3s;
+	-webkit-animation-name: glow-animation;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in-out;
+}
+
+#lamp-base {
+	width: 30%;
+  height: .5em;
+  bottom: 0;
+  background: white;
+  left: calc(50% - 15%);
+}
+
+#box {
+	background: #c37d40cf;
+  width: 8em;
+  height: 8em;
+  top: 9em;
+  transform: skew(-12deg) rotate(-11deg);
+  left: 12em;
+}
+
+@-webkit-keyframes glow-animation {
+	from {
+		box-shadow:0px 0px 20px rgba(242, 252, 167, 0.7);
+	}
+
+	to {
+		box-shadow:0px 0px 60px rgba(242, 252, 167, 1);
+	}
 }
