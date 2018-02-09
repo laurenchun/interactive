@@ -1,0 +1,261 @@
+/* FRAME */
+
+body {
+	background: #E3E2DC;
+	/* -webkit-animation-duration: 4s;
+	-webkit-animation-name: grow;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-out; */
+}
+
+@-webkit-keyframes grow {
+	from {
+		font-size: 16px;
+	}
+
+	to {
+		font-size: 32px;
+	}
+}
+
+
+.canvas {
+	width: 1400px;
+	height: 800px;
+	margin: 0px auto;
+	background: white;
+	position: absolute;
+}
+
+.canvas.one {
+	background: #F4EED3;
+}
+
+
+
+/* DRAWING ONE */
+
+.object {
+	position: absolute;
+}
+
+
+#floor{
+	width: 1400px;
+	height: 150px;
+	bottom: 0em;
+	right: 0em;
+	background: #B5B1A0;
+}
+
+
+#shelf {
+	width: 250px;
+	height: 400px;
+	bottom: 9em;
+	right: 40em;
+
+	border: 10px solid #E1B881;
+}
+
+#shelfpane1 {
+	width: 260px;
+	height: 10px;
+	bottom: 26em;
+	right: 40em;
+	background: #E1B881;
+
+}
+
+#shelfpane2 {
+	width: 260px;
+	height: 10px;
+	bottom: 17em;
+	right: 40em;
+	background: #E1B881;
+
+}
+
+#shelfpane3 {
+	width: 10px;
+	height: 410px;
+	bottom: 9em;
+	right: 48em;
+	background: #E1B881;
+
+}
+
+
+#clock {
+	height: 8em;
+  width: 8em;
+  border-radius: 50%;
+  bottom: 38em;
+  right: 15%;
+	bottom: 75%;
+  background: white;
+	border: 3px solid black;
+}
+
+#clockhand1 {
+	width: 3em;
+	height: .2em;
+	right: 16.5%;
+	bottom: 83%;
+	background: black;
+}
+
+
+#clockhand2 {
+	width: .2em;
+	height: 3em;
+	right: 19.7%;
+	bottom: 83%;
+	background: black;
+}
+
+
+
+
+
+
+#mirror{
+	width: 150px;
+	height: 500px;
+	bottom: 15em;
+	right: 66em;
+	border: 3px solid #ECDEA3;
+	background: #E7F5F6;
+}
+
+
+#table{
+	width: 400px;
+	height: 200px;
+	bottom: 0em;
+	right: 0em;
+	background: #ECDEA3;
+}
+
+#tabletriangle {
+   width: 0;
+   height: 0;
+   border-bottom: 200px  solid #ECDEA3;
+   border-left: 300px solid transparent;
+	 bottom: 0em;
+	 right: 25em;
+}
+
+
+#diffuser {
+	height: 10em;
+  width: 6em;
+  border-radius: 15%;
+  background: white;
+  bottom: 9em;
+  right: 13em;
+}
+
+#vase {
+	bottom: 9em;
+	left: 12em;
+	width: 11em;
+	height: 12em;
+}
+
+#vase #top {
+	border-bottom: 6em solid rgb(255,255,255);
+  border-left: 3em solid transparent;
+  border-right: 3em solid transparent;
+  height: 0;
+  width: 6em;
+}
+
+#vase #middle {
+	width: 12em;
+	height: 1em;
+	background: rgb(240,240,240);
+}
+
+#vase #bottom {
+	border-top: 6em solid rgb(230,230,230);
+  border-left: 3em solid transparent;
+  border-right: 3em solid transparent;
+  height: 0;
+  width: 6em;
+}
+
+#candle {
+	width: 5em;
+	height: 7em;
+	border: 5px solid rgba(255,255,255,0.2);
+	bottom: 5em;
+  right: 23em;
+	/* background: rgba(255,255,255,0.2); */
+	border-top: 0;
+	border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+}
+
+#candle #glass-top {
+	width: 100%;
+	height: 20%;
+	border-radius: 50%;
+	top: -13px;
+	left: -5px;
+	border: 5px solid rgba(255,255,255,0.2);
+}
+
+#candle #wax {
+	background: #F7F7F7;
+	width: 100%;
+	height: 70%;
+	bottom: 0;
+	border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+}
+
+#candle #wax-top {
+	background: #E8ECF1;
+	width: 100%;
+	height: 20%;
+	border-radius: 50%;
+	top: 20%;
+}
+
+#candle #wick {
+	background: black;
+  width: .2em;
+  height: 20%;
+  top: 0.75em;
+  left: 48%;
+}
+
+#candle #flame {
+	background: yellow;
+	width: 13%;
+	height: 25%;
+	border-radius: 50%;
+	top: 0.25em;
+	left: 44%;
+	-webkit-animation-duration: 0.33s;
+	-webkit-animation-name: flicker;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes flicker {
+	from {
+		transform: rotate(3deg);
+		opacity: 1;
+		padding-top: .125em;
+	}
+
+	to {
+		transform: rotate(-3deg);
+		opacity: .85;
+		padding-top: 0;
+	}
+}
