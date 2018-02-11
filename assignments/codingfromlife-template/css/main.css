@@ -30,6 +30,7 @@ body {
 
 .canvas.one {
 	background: rgb(78, 147, 83);
+
 }
 
 .canvas.two {
@@ -57,7 +58,7 @@ body {
 	background: blue;
 	border-radius: 50%;
 	border: 3px solid white;
-	right: 2em;
+	right: 5em;
 	bottom: 2em;
 }
 
@@ -67,7 +68,7 @@ body {
   border-radius: 42%;
   background: #513f35;
   bottom: 9em;
-  right: 13em;
+  right: 17em;
 }
 
 #vase {
@@ -104,7 +105,7 @@ body {
 	height: 7em;
 	border: 5px solid rgba(255,255,255,0.2);
 	bottom: 5em;
-  right: 23em;
+  right: 35em;
 	/* background: rgba(255,255,255,0.2); */
 	border-top: 0;
 	border-bottom-left-radius: 30%;
@@ -174,12 +175,12 @@ body {
 }
 
 #rose {
-	width: 43em;
+	width: 13em;
   height: 3em;
   /* background: rgba(255,255,255,0.2); */
-  bottom: 9em;
-  left: 6em;
-  transform: rotate(9deg);
+  bottom: 15em;
+  left: 21em;
+  transform: rotate(90deg);
 }
 
 #rose #flower {
@@ -192,7 +193,7 @@ body {
 
 #rose #stem {
 	height: 0.65em;
-  width: 45em;
+  width: 13em;
   background: green;
   bottom: 30%;
   left: 2em;
@@ -202,10 +203,10 @@ body {
 #rose #sleeve {
 	bottom: -2em;
   border-top: 5em solid rgba(255,255,255, 0.2);
-  border-right: 37em solid transparent;
+  border-right: 20em solid transparent;
   border-left: 3em solid transparent;
   height: 0;
-  width: 6em;
+  width: 1em;
   left: -2em;
   transform: rotate(5deg);
 }
@@ -216,9 +217,19 @@ body {
 	height: 8em;
   width: 8em;
   border-radius: 50%;
-  bottom: 11em;
-  right: 17em;
+  bottom: 9em;
+  right: 26em;
   background: orange;
+}
+
+
+#kiwi2 {
+	height: 3.75em;
+  width: 5em;
+  border-radius: 42%;
+  background: #513f35;
+  bottom: 14em;
+  right: 21em;
 }
 
 #lamp {
@@ -228,6 +239,16 @@ body {
 	bottom: 13em;
 	/* border: 1px solid red; */
 }
+
+
+#box {
+	background: #c37d40cf;
+  width: 8em;
+  height: 8em;
+  top: 9em;
+  left: 22em;
+}
+
 
 #lamp #light {
 	height: 85%;
@@ -251,14 +272,44 @@ body {
   left: calc(50% - 15%);
 }
 
-#box {
-	background: #c37d40cf;
-  width: 8em;
-  height: 8em;
-  top: 9em;
-  transform: skew(-12deg) rotate(-11deg);
-  left: 12em;
+
+#rose2 {
+	width: 13em;
+  height: 3em;
+  /* background: rgba(255,255,255,0.2); */
+  bottom: 15em;
+  left: 10em;
+  transform: rotate(60deg);
 }
+
+#rose2 #flower2 {
+	background: #b12121;
+  left: 1em;
+  height: 100%;
+  border-radius: 36%;
+  width: 3em;
+}
+
+#rose2 #stem2 {
+	height: 0.65em;
+  width: 13em;
+  background: green;
+  bottom: 30%;
+  left: 2em;
+  transform: rotate(1deg);
+}
+
+#rose2 #sleeve2 {
+	bottom: -2em;
+  border-top: 5em solid rgba(255,255,255, 0.2);
+  border-right: 20em solid transparent;
+  border-left: 3em solid transparent;
+  height: 0;
+  width: 1em;
+  left: -2em;
+  transform: rotate(5deg);
+}
+
 
 @-webkit-keyframes glow-animation {
 	from {
