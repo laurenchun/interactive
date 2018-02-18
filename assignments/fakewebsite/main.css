@@ -1,0 +1,119 @@
+
+  <style>
+
+    /* BASE */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #E9EFCE;
+      font-family: sans-serif;
+      font-size: 20px;
+    }
+
+    a {
+      color: #6f0000;
+      text-decoration: none;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: normal;
+    }
+
+    img {
+      max-width: 70%;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    /* HEADER */
+
+    nav {
+      text-align: center;
+      padding-bottom: 1.5em;
+      padding-top: 2em;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-left: 1em;
+      margin-right: 1em;
+    }
+
+    /* LAYOUT */
+
+    html {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      height: 5em;
+      background: #E9EFCE;
+      border-bottom: none;
+        padding-bottom: 10em;
+    }
+
+    #content {
+      position: absolute;
+      left: 20%;
+      width: 80%;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 1em;
+      top: 5em;
+      padding-bottom: 7em;
+      border-left: none;
+        padding-top: 10em;
+
+    }
+
+    #sidebar {
+      position: absolute;
+      left: 0;
+      width: 20%;
+      padding: 1em;
+      top: 5em;
+      padding-bottom: 4em;
+      padding-top: 10em;
+    }
+
+
+    #menuimage {
+      position: fixed;
+      top: 0em;
+      right: 7em;
+}
+
+
+    footer {
+      border-top: 1px solid black;
+
+      padding: 1em 0 4em;
+        padding-top: 2em;
+    }
+
+    footer div {
+      margin-bottom: 1em;
+    }
+
+  </style>
