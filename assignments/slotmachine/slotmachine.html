@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Slot Machine </title>
+  <link rel="stylesheet" href="slot.css" />
+
+</head>
+
+<body>
+
+  <div id="circle"></div>
+  <div id="circle2"></div>
+  <div id="circle3"></div>
+
+
+  <div id="circle4"></div>
+  <div id="circle5"></div>
+  <div id="circle6"></div>
+  <div id="winner">winner</div>
+
+</div>
+  <button><img src="cherry.png"</button>
+
+  <script src="../js/jquery.min.js"></script>
+  <script>
+
+  $(document).ready(function(){
+
+    // Define the colors
+    var colors = ['red', 'lime', 'magenta', 'blue', 'snow', 'burlywood', 'peachpuff'];
+
+    console.log("This is math random function " + Math.random());
+    console.log("The length of the colors array is " + colors.length);
+
+    // Define function to generate the random colors
+    function generateRandomColors(){
+      var color_one = colors[Math.floor(Math.random() * colors.length)];
+      var color_two = colors[Math.floor(Math.random() * colors.length)];
+      var color_three = colors[Math.floor(Math.random() * colors.length)];
+
+
+
+      console.log("The first color is " + color_one);
+      console.log("The second color is " + color_two);
+      console.log("The third color is " + color_three);
+
+
+
+
+
+      $('#circle').css("background-color", color_one);
+      $('#circle2').css("background-color", color_two);
+      $('#circle3').css("background-color", color_three);
+
+
+    }
+
+
+
+
+//
+
+
+
+
+
+    // Generate the random colors when the page loads
+    generateRandomColors();
+
+    // Buttom click event
+    $('button').click(function(){
+      generateRandomColors();
+    });
+
+  });
+
+  </script>
+
+</body>
+
+</html>
