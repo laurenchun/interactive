@@ -1,0 +1,146 @@
+body {
+}
+
+body.night {
+  background: black;
+}
+
+body.night #ground {
+   background: radial-gradient(cyan, blue, navy);
+}
+
+body.night #organism {
+   background: repeating-radial-gradient(cyan, blue 10%, navy 15%););
+}
+
+body.night #organism .eye {
+  background: rgb(120, 0 , 0)
+}
+
+body.night #water {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 90vh;
+}
+
+#water {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30vh;
+}
+
+#ground {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(cyan, navy);
+  height: 100vh;
+}
+
+
+
+#organism .eye {
+  background: black;
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50%;
+  margin: 2em;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#organism {
+  background: radial-gradient(cyan, blue, navy);
+  width: 20vw;
+  height: 30vh;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20vh;
+  left: 30vw;
+  text-align: center;
+  padding: 2em;
+}
+
+
+
+#organism .eye {
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
+#organism .eye:before,
+#organism .eye:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: red;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+#organism .eye:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+
+
+
+#switch {
+	width: 96px;
+	height: 48px;
+	background: #eee;
+	border-color: red;
+	border-style: solid;
+	border-width: 2px 2px 50px 2px;
+	border-radius: 100%;
+	position: relative;
+}
+
+#switch:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	background: blue;
+	border: 18px solid red;
+	border-radius: 100%;
+	width: 12px;
+	height: 12px;
+}
+
+#switch:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: red;
+	border: 18px solid #eee;
+	border-radius:100%;
+	width: 12px;
+	height: 12px;
+}
