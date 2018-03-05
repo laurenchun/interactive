@@ -31,6 +31,12 @@ body.night #water {
   filter: hue-rotate(90deg);
 }
 
+body.night #switch {
+  filter: hue-rotate(90deg);
+
+
+
+}
 
 
 
