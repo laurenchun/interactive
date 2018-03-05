@@ -1,4 +1,4 @@
-# Interview with the two creators of Haunter.
+# Interview with the two creators of Haunter
 
 ## About
 
