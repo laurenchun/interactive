@@ -1,0 +1,59 @@
+.letter {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.box {
+
+  width: 20px;
+	height: 20px;
+	background: white;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+
+  float: left;
+}
+
+.filled {
+    background: radial-gradient(black 15%, white 25%, black 60%);
+}
+
+
+.beak {
+  width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-left: 20px solid orange;
+	border-bottom: 10px solid transparent;
+}
+
+.beakl {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-right: 20px solid orange;
+	border-bottom: 10px solid transparent;
+}
+}
+}
+
+.special {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.special .filled {
+  background: url('../images/chipmunk.png');
+  background-size: 20px 20px;
+  transition: all 0.2s ease-in;
+}
+
+.special:hover .filled {
+  background: url('../images/chipmunk2.png');
+  background-size: 20px 20px;
+}
