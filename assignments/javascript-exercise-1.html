@@ -1,0 +1,91 @@
+
+
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Title title title</title>
+   <meta charset="utf-8">
+ </head>
+
+ <body>
+
+
+
+   Content content content
+
+   <script src="js/jquery.min.js"></script>
+   <!-- JavaScript goes right before the the body ends! -->
+   <script type="text/javascript">
+     // Your code goes here
+
+
+           var name = "lauren";
+           var year = "2018";
+           var introduction = "Hi, I'm " + name + ", and I graduate in " + year;
+           console.log(introduction);
+
+
+           function hello() {
+             alert('Hello');
+           }
+
+       function hello() {
+         var greeting = "Hello it's ";
+         var date = new Date();
+
+         alert(greeting + date);
+       }
+
+
+
+
+   function hello(person) {
+     var greeting = "Hello, " + person + "! It's ";
+     var date = new Date();
+
+     alert(greeting + date);
+   }
+
+//random font size
+
+   $(document).ready(function(){
+
+       var size = Math.floor(Math.random() * 72) + 1;
+       var units = "px";
+       var fontSize = size + units;
+
+
+console.log(size);
+
+
+       console.log("font-size: " + fontSize);
+       $("body").css("font-size", fontSize);
+
+
+   });
+
+
+//random font size end
+
+// Define list of words as an array
+var words = ['HTML', 'CSS', 'JavaScript', 'jQuery', 'technology', 'questions', 'internet', 'web', 'art.yale.edu', 'preservation', 'primary or secondary', 'social networks', 'ubiquity', 'calm technology', 'attention', 'reliability', 'governance', 'laws', 'audience', 'lifecycle', 'emergent design', 'undergrounds online', 'never-ending present', 'platforms', 'ephemerality', 'culture', 'The Internet Archive', 'digital black hole', 'performance', 'micro-communities', 'the periphery', 'the center', 'local', 'total context', 'reboot the world', 'typography', 'hierarchy', 'navigation', 'pacing', 'variable screen sizes', 'artistic development', 'technological advance', 'parallel histories', 'art', 'conversation', 'never-ending stream', 'interview', 'markdown', 'website', 'the shape of the internet', 'decentralized', 'existential design', 'p2p', 'a history of the internet', 'a history of internet art', 'concrete poetry', 'coding from life', 'documentation', 'memorable', 'poetry', 'bugs'];
+
+// Pick a random word and store it as a variable
+var random_word = words[Math.floor(Math.random()*words.length)];
+
+// Add that random word variable to the HTML element with id of "outro"
+$('#outro').html(random_word);
+
+
+$('body').css('background', 'yellow');
+
+
+
+       hello("Lauren");
+
+
+
+
+   </script>
+ </body>
+</html>
